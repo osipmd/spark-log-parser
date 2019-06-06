@@ -3,10 +3,12 @@ It's fiveth lab of university course Multithreading programming. Parsing Nasa lo
 
 Описание:   
 
-Использует HDFS контейнер для хранения логов и записи результатов парсинга.    
-Результаты, скаченные с HDFS, также представлены в директории /results.   
-Запуск spark application происходит через spark-submit.    
-Использование docker-compose не обязательно.    
+Используется HDFS контейнер для хранения логов и записи результатов парсинга, Spark для распределенной обработки. 
+Используются docker контейнеры для построения кластера HDFS-Spark.    
+docker-compose    
+Результаты, скаченные с HDFS, также представлены в директории /results.    
+Запуск spark application происходит через spark-submit. 
+Использование docker-compose не обязательно.     
 
 Проект состоит из 4-х основных частей
   1) Dockerfile с конфигурацией для HDFS, spark-master и spark-worker контейнеров.   
